@@ -6,8 +6,6 @@ import 'package:location_finder/models/district_model.dart';
 import 'package:location_finder/models/sub_district_model.dart';
 
 class LocationProvider extends ChangeNotifier {
-  List<DistrictModel> districts = [];
-  List<SubDistrictModel> subDistricts = [];
 
   String divValue = "Barisal";
   List<String> divList = [
@@ -17,10 +15,13 @@ class LocationProvider extends ChangeNotifier {
     "Dhaka",
     "Khulna",
     "Mymensingh",
-    "Rajshahi",
     "Rangpur",
     "Sylhet",
   ];
+
+  List<DistrictModel> districts = [];
+  List<SubDistrictModel> subDistricts = [];
+
 
   List<DistrictModel> districtList = [];
   DistrictModel? districtValue;
